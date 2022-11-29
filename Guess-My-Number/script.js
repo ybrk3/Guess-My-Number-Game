@@ -31,7 +31,9 @@ document.querySelector('.check').addEventListener('click', function () {
       highscore = score;
       textManupilator('highscore', highscore);
     }
-  } else if (guess !== secretNumber) {
+  }
+  //When player lost
+  else if (guess !== secretNumber) {
     if (score > 1) {
       guess > secretNumber
         ? textManupilator('message', '📈Too High!')
